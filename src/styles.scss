@@ -32,3 +32,24 @@
 .secondary-font-family {
   font-family: $secondary-font-family;
 }
+
+body {
+  margin: 0;
+  background-color: rgba(183, 110, 121, 0.1);
+}
+
+.primary-btn {
+  background: $secondary-background-color;
+  border: 1px solid $primary-background-color;
+  border-radius: 5px;
+  color: $primary-background-color;
+  font-family: $secondary-font-family;
+}
+
+.primary-btn:hover {
+  opacity: 0.9;
+}
+
+.primary-btn:active {
+  opacity: 0.5;
+}
