@@ -44,6 +44,7 @@ body {
   border-radius: 5px;
   color: $primary-background-color;
   font-family: $secondary-font-family;
+  cursor: pointer;
 }
 
 .primary-btn:hover {
@@ -51,5 +52,26 @@ body {
 }
 
 .primary-btn:active {
+  opacity: 0.5;
+}
+
+.margin-none {
+  margin: 0 !important;
+}
+
+.secondary-btn {
+  background: $primary-background-color;
+  border: 1px solid $secondary-background-color;
+  border-radius: 5px;
+  color: $secondary-background-color;
+  font-family: $secondary-font-family;
+  cursor: pointer;
+}
+
+.secondary-btn :hover {
+  opacity: 0.9;
+}
+
+.secondary-btn :active {
   opacity: 0.5;
 }
