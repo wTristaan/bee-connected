@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+@import "config/_variables";
+@import "config/_tailwind";
+
+@font-face {
+  font-family: "Cocomat pro";
+  src: url("/assets/fonts/Cocomat Light-trial.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.primary-background-color {
+  background-color: $primary-background-color;
+}
+
+.secondary-background-color {
+  background-color: $secondary-background-color;
+}
+
+.text-color {
+  color: $text-color;
+}
+
+.icon-color {
+  color: $icon-color;
+}
+
+.primary-font-family {
+  font-family: $primary-font-family;
+}
+
+.secondary-font-family {
+  font-family: $secondary-font-family;
+}
