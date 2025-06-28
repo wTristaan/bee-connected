@@ -79,3 +79,10 @@ body {
 .primary-border {
   border-color: $secondary-background-color;
 }
+
+.badge {
+  background-color: $secondary-background-color;
+  width: 50%;
+  text-align: center;
+  color: $primary-background-color;
+}
