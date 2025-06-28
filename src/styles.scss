@@ -75,3 +75,7 @@ body {
 .secondary-btn :active {
   opacity: 0.5;
 }
+
+.primary-border {
+  border-color: $secondary-background-color;
+}

@@ -1,0 +1,82 @@
+<section class="py-16 px-4 bg-white/50">
+  <div class="container mx-auto">
+    <div class="text-center mb-16">
+      <h3 class="text-4xl font-bold primary-font-family mb-4">
+        À propose de nous
+      </h3>
+      <p class="text-xl secondary-font-family text-color">
+        On vous accompgane jusqu'au bout
+      </p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div
+        data-slot="card"
+        class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm primary-border hover:shadow-lg transition-shadow"
+      >
+        <div
+          data-slot="card-header"
+          class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+        >
+          <div
+            data-slot="card-title"
+            class="leading-none font-semibold secondary-font-family"
+          >
+            Notre Mission
+          </div>
+        </div>
+        <div data-slot="card-content" class="px-6">
+          <p class="secondary-font-family">
+            Accompagner les entrepreneurs et petites structures dans leur
+            lancement digital en leur créant des outils clairs, esthétiques et
+            faciles à prendre en main.
+          </p>
+        </div>
+      </div>
+      <div
+        data-slot="card"
+        class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm primary-border hover:shadow-lg transition-shadow"
+      >
+        <div
+          data-slot="card-header"
+          class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+        >
+          <div
+            data-slot="card-title"
+            class="leading-none font-semibold secondary-font-family"
+          >
+            Notre Vision
+          </div>
+        </div>
+        <div data-slot="card-content" class="px-6">
+          <p class="secondary-font-family">
+            Nous ne faisons pas de suivi à long terme. Notre mission, c'est de
+            vous donner le coup de pouce décisif pour que vous voliez de vos
+            propres ailes.
+          </p>
+        </div>
+      </div>
+      <div
+        data-slot="card"
+        class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm primary-border hover:shadow-lg transition-shadow"
+      >
+        <div
+          data-slot="card-header"
+          class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+        >
+          <div
+            data-slot="card-title"
+            class="leading-none font-semibold secondary-font-family"
+          >
+            Nos Valeurs
+          </div>
+        </div>
+        <div data-slot="card-content" class="px-6">
+          <p class="secondary-font-family">
+            Comme les abeilles, nous butinons les idées, construisons avec
+            méthode et faisons du bon travail, discret... mais essentiel.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
