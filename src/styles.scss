@@ -1,14 +1,6 @@
 @import "config/_variables";
 @import "config/_tailwind";
 
-@font-face {
-  font-family: "Cocomat pro";
-  src: url("/assets/fonts/Cocomat Light-trial.ttf");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 .primary-background-color {
   background-color: $primary-background-color;
 }
@@ -84,5 +76,13 @@ body {
   background-color: $secondary-background-color;
   width: 50%;
   text-align: center;
+  color: $primary-background-color;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.white {
   color: $primary-background-color;
 }

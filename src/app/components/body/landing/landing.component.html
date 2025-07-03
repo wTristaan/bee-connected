@@ -1,29 +1,52 @@
 <div>
-  <section class="py-20 px-4">
-    <div class="container mx-auto text-center">
+  <section class="py-20 px-4 lg:grid lg:grid-cols-10 lg:gap-4">
+    <div class="container mx-auto text-center lg:col-span-6">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-5xl font-bold text-gray-900 mb-6 primary-font-family">
-          Une agence indépendante qui accompagne votre<span class="text-color">
-            lancement digital</span
-          >
+        <h2
+          class="text-left text-4xl lg:text-5xl font-bold text-gray-900 mb-6 primary-font-family"
+        >
+          UNE AGENCE INDÉPENDANTES QUI ACCOMPAGNE LES
+          <span class="badge">ENTREPRENEURS</span>,
+          <span class="badge">THÉRAPEUTES</span>,
+          <span class="badge">FREELANCES</span> ET
+          <span class="badge">PETITES STRUCTURES</span> DANS LEURS
+          <span class="text-color"> LANCEMENT NUMÉRIQUE</span>
         </h2>
         <p
-          class="text-xl text-gray-600 mb-8 leading-relaxed secondary-font-family"
+          class="text-left text-lg lg:text-xl text-gray-600 mb-8 leading-relaxed secondary-font-family"
         >
-          Nous créons pour vous une identité visuelle claire, un site web adapté
-          à vos besoins, une communication simple et des outils bien paramétrés.
-          Mais surtout, nous croyons en l'autonomie.
+          Je m'occupe de créer pour vous une identité visuelle claire, un site
+          web adapté à vos besoins, une communication simple et des outils bien
+          paramétrés. Mais surtout, je crois en l'autonomie.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <button class="primary-btn px-[16px] py-[9px] align-center text-lg">
-            Découvrir nos services
+            <a href="#services" style="text-decoration: none; color: white"
+              >Découvrir mes services</a
+            >
           </button>
 
           <button class="secondary-btn px-[16px] py-[9px] align-center text-lg">
-            Voir nos services
+            <a
+              href="assets/pdf/file.pdf"
+              download="Bee-connected-presentation.pdf"
+              style="text-decoration: none"
+              class="text-color"
+              >Télécharger la brochure</a
+            >
           </button>
         </div>
       </div>
+    </div>
+
+    <div
+      class="hidden lg:block lg:col-span-4 lg:container lg:mx-auto lg:text-center"
+    >
+      <img
+        src="assets/images/bee_no_bg.webp"
+        alt="Une abeille"
+        class="w-full"
+      />
     </div>
   </section>
 </div>
