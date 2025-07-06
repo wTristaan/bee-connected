@@ -8,13 +8,38 @@
       Be smart be connected
     </p>
   </div>
-  <div class="max-height-40 content-center text-center col-span-2">
+  <div class="w-full h-24 col-span-2 justify-items-end z-2 lg:hidden">
+    <div
+      class="relative top-[35px] right-[40px] burger-menu"
+      (click)="openMenu()"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div class="menu-overlay">
+    <a
+      href="mailto:lafayelouanne@gmail.com?subject=Demande concernant ...&body=Bonjour, je souhaiterais vous contacter concernant ..."
+      class="menu-item secondary-font-family"
+      >Contactez-moi !</a
+    >
+    <a href="#" class="menu-item secondary-font-family">À propos</a>
+  </div>
+
+  <div
+    class="hidden max-height-40 content-center justify-self-end col-span-2 mr-[10%] lg:block"
+  >
     <button class="primary-btn px-[16px] py-[9px]">
       <a
         href="mailto:lafayelouanne@gmail.com?subject=Demande concernant ...&body=Bonjour, je souhaiterais vous contacter concernant ..."
         class="link white"
         >Contactez-moi !</a
       >
+    </button>
+    <button class="primary-btn px-[16px] py-[9px]">
+      <a href="#" class="link white">À propos</a>
     </button>
   </div>
 </div>

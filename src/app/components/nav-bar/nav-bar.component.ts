@@ -7,4 +7,12 @@ import { ButtonModule } from 'primeng/button';
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.scss',
 })
-export class NavBarComponent {}
+export class NavBarComponent {
+  openMenu() {
+    const burgerMenu = document.querySelector('.burger-menu');
+    const menuOverlay = document.querySelector('.menu-overlay');
+
+    burgerMenu!.classList.toggle('open');
+    menuOverlay!.classList.toggle('active');
+  }
+}
