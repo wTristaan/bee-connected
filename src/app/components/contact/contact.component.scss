@@ -1,0 +1,58 @@
+@import "../../../config/variables";
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="url"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid $secondary-background-color;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.help-questions p {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+button[type="submit"] {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #a08c8e; /* Slightly darker shade */
+}
+
+.padding-inline-10 {
+  padding-inline: 1rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .padding-inline-10 {
+    padding-inline: 10%;
+  }
+}

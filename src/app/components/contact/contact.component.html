@@ -1,0 +1,682 @@
+<section
+  class="text-center py-8 px-4 text-4xl lg:text-5xl font-bold text-gray-900 primary-font-family"
+>
+  <h1>Démarrons votre projet ensemble</h1>
+</section>
+
+<section class="py-8 px-4 l padding-inline-10">
+  <h3 class="text-4xl font-bold primary-font-family mb-8 uppercase">
+    Parlez-nous de vous
+  </h3>
+  <form
+    class="text-xl secondary-font-family text-color uppercase grid grid-cols-2 gap-4"
+  >
+    <div class="form-group col-span-2 lg:col-span-1">
+      <label class="float-left" for="prenom">Prénom :</label>
+      <input type="text" id="prenom" name="prenom" required />
+    </div>
+    <div class="form-group col-span-2 lg:col-span-1">
+      <label class="float-left" for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required />
+    </div>
+    <div class="form-group col-span-2 lg:col-span-1">
+      <label class="float-left" for="email">Email professionnel :</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+    <div class="form-group col-span-2 lg:col-span-1">
+      <label class="float-left" for="telephone">Téléphone :</label>
+      <input type="tel" id="telephone" name="telephone" />
+    </div>
+    <div class="form-group col-span-2 lg:col-span-1">
+      <label class="float-left" for="entreprise"
+        >Nom de l'entreprise/structure :</label
+      >
+      <input type="text" id="entreprise" name="entreprise" />
+    </div>
+    <div class="form-group col-span-2 lg:col-span-1">
+      <label class="float-left" for="secteur">Secteur d'activité :</label>
+      <input type="text" id="secteur" name="secteur" />
+    </div>
+    <div class="form-group col-span-2">
+      <label class="float-left" for="site-web"
+        >Site web actuel (optionnel) :</label
+      >
+      <input type="url" id="site-web" name="site-web" />
+    </div>
+  </form>
+</section>
+
+<section class="py-8 px-4 bg-white/50 l padding-inline-10">
+  <h3 class="text-4xl font-bold primary-font-family mb-8 uppercase">
+    Quels services vous intéressent ?
+  </h3>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div
+      data-slot="card"
+      class="bg-card text-card-foreground flex flex-col gap-1 rounded-xl py-6 shadow-sm border-2 transition-all duration-300 cursor-pointer primary-border"
+    >
+      <div
+        data-slot="card-header"
+        class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 text-center"
+      >
+        <div class="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-palette w-8 h-8"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"
+            ></path>
+            <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+            <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+            <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+            <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+          </svg>
+        </div>
+        <div
+          data-slot="card-title"
+          class="font-semibold text-xl secondary-font-family text-color"
+        >
+          Identité Visuelle
+        </div>
+        <div
+          data-slot="card-description"
+          class="text-lg font-semibold secondary-font-family"
+        >
+          250€
+        </div>
+        <p class="text-sm secondary-font-family text-gray-600">
+          Pack Essentiel
+        </p>
+      </div>
+      <div data-slot="card-content" class="px-6">
+        <ul class="space-y-2 mb-4">
+          <li class="flex items-start space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check-big w-5 h-5 secondary-font-family mt-0.5 flex-shrink-0 text-color"
+              aria-hidden="true"
+            >
+              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+              <path d="m9 11 3 3L22 4"></path></svg
+            ><span class="text-sm secondary-font-family"
+              >Logo simple et impactant</span
+            >
+          </li>
+          <li class="flex items-start space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check-big w-5 h-5 secondary-font-family mt-0.5 flex-shrink-0 text-color"
+              aria-hidden="true"
+            >
+              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+              <path d="m9 11 3 3L22 4"></path></svg
+            ><span class="text-sm secondary-font-family"
+              >Palette couleurs, typographies</span
+            >
+          </li>
+          <li class="flex items-start space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check-big w-5 h-5 secondary-font-family mt-0.5 flex-shrink-0 text-color"
+              aria-hidden="true"
+            >
+              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+              <path d="m9 11 3 3L22 4"></path></svg
+            ><span class="text-sm secondary-font-family"
+              >Templates Canva pour les réseaux ou newsletters</span
+            >
+          </li>
+          <li class="flex items-start space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check-big w-5 h-5 secondary-font-family mt-0.5 flex-shrink-0 text-color"
+              aria-hidden="true"
+            >
+              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+              <path d="m9 11 3 3L22 4"></path></svg
+            ><span class="text-sm secondary-font-family"
+              >Mini charte graphique</span
+            >
+          </li>
+        </ul>
+        <p class="badge secondary-font-family">
+          Formation à l'outil Canva +100€
+        </p>
+        <label class="text-sm secondary-font-family"
+          ><input type="checkbox" name="service" value="site-vitrine" />
+          Sélectionner</label
+        >
+      </div>
+    </div>
+
+    <div
+      data-slot="card"
+      class="bg-card text-card-foreground flex flex-col gap-1 rounded-xl py-6 shadow-sm border-2 transition-all duration-300 cursor-pointer primary-border"
+    >
+      <div
+        data-slot="card-header"
+        class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 text-center"
+      >
+        <div class="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-globe w-8 h-8"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+            <path d="M2 12h20"></path>
+          </svg>
+        </div>
+        <div
+          data-slot="card-title"
+          class="font-semibold text-xl secondary-font-family text-color"
+        >
+          Site Web Vitrine
+        </div>
+        <div
+          data-slot="card-description"
+          class="text-lg font-semibold secondary-font-family"
+        >
+          À partir de 500€
+        </div>
+        <p class="text-sm secondary-font-family text-gray-600">
+          Site professionnel
+        </p>
+      </div>
+      <div data-slot="card-content" class="px-6">
+        <ul class="space-y-2 mb-4">
+          <li class="flex items-start space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check-big w-5 h-5 secondary-font-family mt-0.5 flex-shrink-0 text-color"
+              aria-hidden="true"
+            >
+              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+              <path d="m9 11 3 3L22 4"></path></svg
+            ><span class="text-sm secondary-font-family"
+              >Site 1 à 5 pages (WordPress ou autre)</span
+            >
+          </li>
+          <li class="flex items-start space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check-big w-5 h-5 secondary-font-family mt-0.5 flex-shrink-0 text-color"
+              aria-hidden="true"
+            >
+              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+              <path d="m9 11 3 3L22 4"></path></svg
+            ><span class="text-sm secondary-font-family"
+              >Responsive mobile</span
+            >
+          </li>
+          <li class="flex items-start space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check-big w-5 h-5 secondary-font-family mt-0.5 flex-shrink-0 text-color"
+              aria-hidden="true"
+            >
+              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+              <path d="m9 11 3 3L22 4"></path></svg
+            ><span class="text-sm secondary-font-family"
+              >Nom de domaine, hébergement</span
+            >
+          </li>
+
+          <li class="flex items-start space-x-2 opacity-0">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check-big w-5 h-5 secondary-font-family mt-0.5 flex-shrink-0 text-color"
+              aria-hidden="true"
+            >
+              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+              <path d="m9 11 3 3L22 4"></path></svg
+            ><span class="text-sm secondary-font-family"
+              >Pages légales (CGV, mentions)</span
+            >
+          </li>
+        </ul>
+        <p class="badge secondary-font-family">Formation prise en main 150€</p>
+        <label class="text-sm secondary-font-family"
+          ><input type="checkbox" name="service" value="site-vitrine" />
+          Sélectionner</label
+        >
+      </div>
+    </div>
+
+    <div
+      data-slot="card"
+      class="bg-card text-card-foreground flex flex-col gap-1 rounded-xl py-6 shadow-sm border-2 transition-all duration-300 cursor-pointer primary-border"
+    >
+      <div
+        data-slot="card-header"
+        class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 text-center"
+      >
+        <div class="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-shopping-cart w-8 h-8"
+            aria-hidden="true"
+          >
+            <circle cx="8" cy="21" r="1"></circle>
+            <circle cx="19" cy="21" r="1"></circle>
+            <path
+              d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+            ></path>
+          </svg>
+        </div>
+        <div
+          data-slot="card-title"
+          class="font-semibold text-xl secondary-font-family text-color"
+        >
+          Site E-commerce
+        </div>
+        <div
+          data-slot="card-description"
+          class="text-lg font-semibold secondary-font-family"
+        >
+          À partir de 750€
+        </div>
+        <p class="text-sm secondary-font-family text-gray-600">
+          Boutique en ligne
+        </p>
+      </div>
+      <div data-slot="card-content" class="px-6">
+        <ul class="space-y-2 mb-4">
+          <li class="flex items-start space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check-big w-5 h-5 secondary-font-family mt-0.5 flex-shrink-0 text-color"
+              aria-hidden="true"
+            >
+              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+              <path d="m9 11 3 3L22 4"></path></svg
+            ><span class="text-sm secondary-font-family"
+              >Boutique (jusqu'à 10 produits)</span
+            >
+          </li>
+          <li class="flex items-start space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check-big w-5 h-5 secondary-font-family mt-0.5 flex-shrink-0 text-color"
+              aria-hidden="true"
+            >
+              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+              <path d="m9 11 3 3L22 4"></path></svg
+            ><span class="text-sm secondary-font-family"
+              >Paiement en ligne sécurisé</span
+            >
+          </li>
+          <li class="flex items-start space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check-big w-5 h-5 secondary-font-family mt-0.5 flex-shrink-0 text-color"
+              aria-hidden="true"
+            >
+              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+              <path d="m9 11 3 3L22 4"></path></svg
+            ><span class="text-sm secondary-font-family"
+              >Pages légales (CGV, mentions)</span
+            >
+          </li>
+          <li class="flex items-start space-x-2 opacity-0">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check-big w-5 h-5 secondary-font-family mt-0.5 flex-shrink-0 text-color"
+              aria-hidden="true"
+            >
+              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+              <path d="m9 11 3 3L22 4"></path></svg
+            ><span class="text-sm secondary-font-family"
+              >Pages légales (CGV, mentions)</span
+            >
+          </li>
+        </ul>
+        <p class="badge secondary-font-family">
+          Formation à la gestion boutique 150€
+        </p>
+        <label class="text-sm secondary-font-family"
+          ><input type="checkbox" name="service" value="site-vitrine" />
+          Sélectionner</label
+        >
+      </div>
+    </div>
+
+    <div
+      data-slot="card"
+      class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm primary-border 0 transition-shadow"
+    >
+      <div
+        data-slot="card-header"
+        class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+      >
+        <div class="flex items-center space-x-3">
+          <div class="p-2 bg-primary/10 rounded-lg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-mail w-6 h-6"
+              aria-hidden="true"
+            >
+              <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+            </svg>
+          </div>
+          <div>
+            <div
+              data-slot="card-title"
+              class="font-semibold text-lg secondary-font-family"
+            >
+              Newsletter pro
+            </div>
+            <div
+              data-slot="card-description"
+              class="text-muted-foreground text-sm secondary-font-family text-gray-600"
+            >
+              Abonnement mensuel
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-slot="card-content" class="px-6">
+        <ul class="space-y-1">
+          <li class="text-sm secondary-font-family">
+            Assistance technique - 60€/mois
+          </li>
+          <li class="text-sm secondary-font-family">
+            Création complète - 120€/mois
+          </li>
+          <li class="text-sm secondary-font-family opacity-0">
+            Tâches diverses - 20€/heure
+          </li>
+        </ul>
+        <label class="text-sm secondary-font-family"
+          ><input type="checkbox" name="service" value="site-vitrine" />
+          Sélectionner</label
+        >
+      </div>
+    </div>
+
+    <div
+      data-slot="card"
+      class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm primary-border 0 transition-shadow"
+    >
+      <div
+        data-slot="card-header"
+        class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+      >
+        <div class="flex items-center space-x-3">
+          <div class="p-2 bg-primary/10 rounded-lg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-settings w-6 h-6"
+              aria-hidden="true"
+            >
+              <path
+                d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
+              ></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </div>
+          <div>
+            <div
+              data-slot="card-title"
+              class="font-semibold text-lg secondary-font-family"
+            >
+              Outils &amp; Automatisation
+            </div>
+            <div
+              data-slot="card-description"
+              class="text-muted-foreground text-sm secondary-font-family text-gray-600"
+            >
+              À partir de 150€/outil
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-slot="card-content" class="px-6">
+        <ul class="space-y-1">
+          <li class="text-sm secondary-font-family">
+            Installation et configuration
+          </li>
+          <li class="text-sm secondary-font-family">
+            Formation sur chaque outil disponible
+          </li>
+          <li class="text-sm secondary-font-family opacity-0">
+            Tâches diverses - 20€/heure
+          </li>
+        </ul>
+        <label class="text-sm secondary-font-family"
+          ><input type="checkbox" name="service" value="site-vitrine" />
+          Sélectionner</label
+        >
+      </div>
+    </div>
+
+    <div
+      data-slot="card"
+      class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm primary-border 0 hover:shadow-lg transition-shadow"
+    >
+      <div
+        data-slot="card-header"
+        class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+      >
+        <div class="flex items-center space-x-3">
+          <div class="p-2 bg-primary/10 rounded-lg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-users w-6 h-6"
+              aria-hidden="true"
+            >
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+              <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <div>
+            <div
+              data-slot="card-title"
+              class="font-semibold text-lg secondary-font-family"
+            >
+              Assistance et secrétariat
+            </div>
+            <div
+              data-slot="card-description"
+              class="text-muted-foreground text-sm secondary-font-family text-gray-600"
+            >
+              Services complémentaires
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-slot="card-content" class="px-6">
+        <ul class="space-y-1">
+          <li class="text-sm secondary-font-family">
+            Saisie comptable - 15€/heure
+          </li>
+          <li class="text-sm secondary-font-family">Traduction - 1€/page</li>
+          <li class="text-sm secondary-font-family">
+            Tâches diverses - 20€/heure
+          </li>
+        </ul>
+        <label class="text-sm secondary-font-family"
+          ><input type="checkbox" name="service" value="site-vitrine" />
+          Sélectionner</label
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-8 px-4 l padding-inline-10">
+  <h3 class="text-4xl font-bold primary-font-family mb-8 uppercase">
+    Décrivez-nous votre projet
+  </h3>
+  <div class="form-group text-xl secondary-font-family text-color uppercase">
+    <label class="float-left" for="description">Description :</label>
+    <textarea id="description" name="description" rows="10"></textarea>
+  </div>
+  <div class="help-questions text-xl secondary-font-family text-color py-8">
+    <p>Quel est votre objectif principal ?</p>
+    <p>Avez-vous des références visuelles ?</p>
+    <p>Quel est votre budget approximatif ?</p>
+    <p>Quand souhaitez-vous démarrer ?</p>
+  </div>
+  <label class="text-xl secondary-font-family text-color"
+    ><input type="checkbox" name="devis" /> Je souhaite être recontacté pour un
+    devis personnalisé</label
+  >
+  <div class="py-8">
+    <button class="primary-btn px-[16px] py-[9px]">
+      <a class="link white">Envoyer ma demande</a>
+    </button>
+  </div>
+</section>
+
+<section class="py-20 px-4 secondary-background-color text-white"></section>

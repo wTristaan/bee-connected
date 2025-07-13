@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-ready',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './ready.component.html',
-  styleUrl: './ready.component.scss'
+  styleUrl: './ready.component.scss',
 })
-export class ReadyComponent {
-
-}
+export class ReadyComponent {}
