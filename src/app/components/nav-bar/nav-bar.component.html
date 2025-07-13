@@ -1,8 +1,11 @@
 <div class="w-full h-24 nav-bg grid grid-cols-5 gap-4 sticky top-0 z-50">
-  <div class="max-height-40 content-center text-center xl:text-right">
+  <div
+    routerLink=""
+    class="max-height-40 content-center text-center xl:text-right"
+  >
     <img class="w-25" src="assets/logos/loop.gif" alt="Bee connected logo" />
   </div>
-  <div class="max-height-40 content-center text-left col-span-2">
+  <div routerLink="" class="max-height-40 content-center text-left col-span-2">
     <h3 class="primary-font-family text-color margin-none">Bee connected</h3>
     <p class="secondary-font-family margin-none text-xs">
       Be smart be connected
@@ -18,11 +21,11 @@
 
   <div class="menu-overlay">
     <a
-      href="mailto:lafayelouanne@gmail.com?subject=Demande concernant ...&body=Bonjour, je souhaiterais vous contacter concernant ..."
+      href="mailto:beeconnectedagency@gmail.com?subject=Demande concernant ...&body=Bonjour, je souhaiterais vous contacter concernant ..."
       class="menu-item secondary-font-family"
       >Contactez-moi !</a
     >
-    <a href="#" class="menu-item secondary-font-family">À propos</a>
+    <a routerLink="about" class="menu-item secondary-font-family">À propos</a>
   </div>
 
   <div
@@ -30,13 +33,13 @@
   >
     <button class="primary-btn px-[16px] py-[9px]">
       <a
-        href="mailto:lafayelouanne@gmail.com?subject=Demande concernant ...&body=Bonjour, je souhaiterais vous contacter concernant ..."
+        href="mailto:beeconnectedagency@gmail.com?subject=Demande concernant ...&body=Bonjour, je souhaiterais vous contacter concernant ..."
         class="link white"
         >Contactez-moi !</a
       >
     </button>
     <button class="primary-btn px-[16px] py-[9px]">
-      <a href="#" class="link white">À propos</a>
+      <a routerLink="about" class="link white">À propos</a>
     </button>
   </div>
 </div>

@@ -1,0 +1,409 @@
+$bg-white: #ffffff;
+$accent-rose: #b76e79;
+$text-brown: #995f67;
+$dark-grey: #2e2e2e;
+$light-grey: #f8f8f8;
+
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+  color: $text-brown;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: $text-brown;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /*   background: linear-gradient(135deg, $bg-white 0%, $light-grey 100%);
+ */
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* 
+  background-size: 400px 400px;
+  background-repeat: repeat; */
+  opacity: 0.03;
+  z-index: 1;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text {
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, $text-brown, $accent-rose);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-text .subtitle {
+  font-size: 1.3rem;
+  color: $accent-rose;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-frame {
+  width: 350px;
+  height: 350px;
+  /*   background: linear-gradient(135deg, $accent-rose, #d4a5b0);
+ */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(183, 110, 121, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.profile-frame:hover {
+  transform: scale(1.05);
+}
+
+.profile-frame::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  /*   background: $bg-white;
+ */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-placeholder {
+  position: relative;
+  z-index: 2;
+  width: 280px;
+  height: 280px;
+  /*   background: linear-gradient(135deg, $light-grey, #e8e8e8);
+ */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: $text-brown;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Quote Section */
+.quote-section {
+  padding: 100px 0;
+  /*   background: $bg-white;
+ */
+  position: relative;
+}
+
+.quote-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /*  
+  background-size: 600px 600px;
+  background-repeat: repeat; */
+  opacity: 0.02;
+  z-index: 1;
+}
+
+.quote-container {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.quote-text {
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: $accent-rose;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+.quote-text::before,
+.quote-text::after {
+  content: '"';
+  font-size: 4rem;
+  color: $accent-rose;
+  opacity: 0.3;
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+}
+
+.quote-text::before {
+  top: -20px;
+  left: -40px;
+}
+
+.quote-text::after {
+  bottom: -40px;
+  right: -40px;
+}
+
+/* Main Content */
+.main-content {
+  padding: 100px 0;
+  /*   background: $bg-white;
+ */
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.content-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: $text-brown;
+  position: relative;
+  padding-left: 30px;
+}
+
+.content-section h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  /*   background: $accent-rose;
+ */
+  border-radius: 50%;
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: $text-brown;
+}
+
+.highlight {
+  color: $accent-rose;
+  font-weight: 500;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 80px 0;
+  /*   background: linear-gradient(135deg, $light-grey 0%, $bg-white 100%);
+ */
+  text-align: center;
+  position: relative;
+}
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* 
+  background-size: 300px 300px;
+  background-repeat: repeat; */
+  opacity: 0.02;
+  z-index: 1;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 18px 40px;
+  /*   background: linear-gradient(135deg, $accent-rose, #d4a5b0); */
+  color: $bg-white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(183, 110, 121, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  /*   background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  ); */
+  transition: left 0.5s;
+}
+
+.cta-button:hover::before {
+  left: 100%;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(183, 110, 121, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .profile-frame {
+    width: 280px;
+    height: 280px;
+  }
+
+  .profile-placeholder {
+    width: 220px;
+    height: 220px;
+    font-size: 1rem;
+  }
+
+  .quote-text {
+    font-size: 1.8rem;
+    padding: 0 20px;
+  }
+
+  .quote-text::before,
+  .quote-text::after {
+    font-size: 3rem;
+  }
+
+  .quote-text::before {
+    top: -15px;
+    left: -20px;
+  }
+
+  .quote-text::after {
+    bottom: -30px;
+    right: -20px;
+  }
+
+  .content-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .content-section p {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .profile-frame {
+    width: 240px;
+    height: 240px;
+  }
+
+  .profile-placeholder {
+    width: 180px;
+    height: 180px;
+    font-size: 0.9rem;
+  }
+
+  .quote-text {
+    font-size: 1.5rem;
+  }
+
+  .content-section h2 {
+    font-size: 1.5rem;
+    padding-left: 25px;
+  }
+
+  .content-section h2::before {
+    width: 15px;
+    height: 15px;
+  }
+}
